@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(IMG_2069.JPG);
+    background-size: cover;
+    background-position: auto;
+
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    padding: 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.logo{
+    width: 120px;
+    cursor: pointer;
+    border-radius: 100%;
+}
+    .navbar ul li{
+
+        list-style: none;
+        display: inline-block;
+        margin: 0 20px;
+        position: relative;
+        color: #fff;
+        cursor: pointer;
+    }
+    .navbar ul li a{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        position: top;
+        text-decoration: none;
+        color: #fff;
+        text-transform: uppercase;
+        
+    }
+    .navbar ul li a::after{
+        content: '';
+        width: 0;
+        height: 2px;
+        background: rgb(0, 30, 255);
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        color: rgb(60, 0, 255);
+        transition: 0.5s;
+    }
+    .navbar ul li a:hover::after{
+        width: 100%;
+
+    }
+.content{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    top: 66%;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: larger;
+    font-family: 'Times New Roman', Times, serif;
+}
+.content h1{
+    font-size: 70px;
+    margin-bottom: 20px;
+    margin-top: auto;
+    color: black;
+    
+}
+.content p{
+    font-weight: 100;
+    line-height: 25px;
+    margin: 20px auto;
+    font-family: 'Times New Roman', Times, serif;
+}
+.content button{
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    padding: 15px 0;
+    text-align : center;
+    margin : 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border : 2px solid #fff;
+    background: transparent;
+    color: #ffffff;
+    cursor: pointer;
+    height: 50px;
+    width: 200px;
+    overflow: hidden;
+  }
+
+.content button span{
+    background: #013e67;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.button:hover span{
+    width: 100%;
+}
+button:hover{
+    border: none;
+}
+
+.footer{
+    position: bottom;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #013e67;
+    color: white;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}

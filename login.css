@@ -1,0 +1,142 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+.main{
+    position: center;
+    width: 350px;
+    height: 480px;
+    overflow: hidden;
+}
+
+#chk{
+    display: none;
+}
+
+.login{
+    
+    width: 100%;
+    height: 100%;
+    position: relative;
+    
+}
+
+button{
+    position: relative;
+    padding: 15px 0;
+    text-align : center;
+    margin : 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border : 2px solid #fff;
+    background: transparent;
+    color: #ffffff;
+    cursor: pointer;
+    height: 50px;
+    width: 200px;
+    overflow: hidden;
+}
+
+button span{
+    background: #013e67;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+button:hover span{
+    width: 100%;
+}
+
+button:hover{
+    border: none;
+}
+
+
+
+form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+label{
+    color: rgb(252, 247, 247);
+    font-size: 35px;
+    justify-content: center;
+    display: flex;
+    margin: auto;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+input{
+    width: 30%;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    position: relative;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(IMG_2069.JPG);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+}
+
+.logo{
+    position: absolute;
+    width: 0%;
+    cursor: pointer;
+    border-radius: 100%;
+    margin: auto;
+
+}
+
+p{
+    color: white;
+}
+
+a{
+    color: white;
+    
+}
+
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #013e67;
+    color: white;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
